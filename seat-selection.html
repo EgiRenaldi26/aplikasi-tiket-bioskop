@@ -1,0 +1,883 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seat Selection -Egi Cinema</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="list-movies.html">Egi Cinema</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="list-movies.html">
+                    List Film
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="transaction-histories.html">
+                    Riwayat Transaksi
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    kasir1
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="change-password.html">Ubah Password</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" onclick="event.preventDefault();document.getElementById('form-logout').submit()" class="dropdown-item">Logout</a>
+                    <form action="index.html" id="form-logout" method="post"><input type="hidden" name="_token" value="8SEIRsSwnoGEnflD8f1JMLXBrvx6TFMscHse80mV"></form>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="content py-4">
+    <div class="container">
+        <p class="text-center text-muted mb-2">
+            Gara - Gara Warisan (Studio Tulip)
+        </p>
+        <h5 class="text-center text-muted mb-4">
+            24 May<span class="mx-3">|</span> 10:00
+        </h5>
+
+        <form
+            action="confirm-order.html"
+            method="GET"
+        >
+            <input type="hidden" name="time" value="10:00" />
+
+            <div class="row d-flex justify-content-around mb-4">
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A01"
+                            value="A01"
+                        />
+                        <label for="checkbox-A01" class="btn btn-dark">A01</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A02"
+                            value="A02"
+                        />
+                        <label for="checkbox-A02" class="btn btn-dark">A02</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A03"
+                            value="A03"
+                        />
+                        <label for="checkbox-A03" class="btn btn-dark">A03</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A04"
+                            value="A04"
+                        />
+                        <label for="checkbox-A04" class="btn btn-dark">A04</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A05"
+                            value="A05"
+                        />
+                        <label for="checkbox-A05" class="btn btn-dark">A05</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A06"
+                            value="A06"
+                        />
+                        <label for="checkbox-A06" class="btn btn-dark">A06</label>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A07"
+                            value="A07"
+                        />
+                        <label for="checkbox-A07" class="btn btn-dark">A07</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A08"
+                            value="A08"
+                        />
+                        <label for="checkbox-A08" class="btn btn-dark">A08</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A09"
+                            value="A09"
+                        />
+                        <label for="checkbox-A09" class="btn btn-dark">A09</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A10"
+                            value="A10"
+                            disabled
+                        />
+                        <label for="checkbox-A10" class="btn btn-light">A10</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A11"
+                            value="A11"
+                            disabled
+                        />
+                        <label for="checkbox-A11" class="btn btn-light">A11</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-A12"
+                            value="A12"
+                        />
+                        <label for="checkbox-A12" class="btn btn-dark">A12</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mb-4">
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B01"
+                            value="B01"
+                        />
+                        <label for="checkbox-B01" class="btn btn-dark">B01</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B02"
+                            value="B02"
+                        />
+                        <label for="checkbox-B02" class="btn btn-dark">B02</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B03"
+                            value="B03"
+                        />
+                        <label for="checkbox-B03" class="btn btn-dark">B03</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B04"
+                            value="B04"
+                        />
+                        <label for="checkbox-B04" class="btn btn-dark">B04</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B05"
+                            value="B05"
+                            disabled
+                        />
+                        <label for="checkbox-B05" class="btn btn-light">B05</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B06"
+                            value="B06"
+                            disabled
+                        />
+                        <label for="checkbox-B06" class="btn btn-light">B06</label>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B07"
+                            value="B07"
+                        />
+                        <label for="checkbox-B07" class="btn btn-dark">B07</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B08"
+                            value="B08"
+                        />
+                        <label for="checkbox-B08" class="btn btn-dark">B08</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B09"
+                            value="B09"
+                        />
+                        <label for="checkbox-B09" class="btn btn-dark">B09</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B10"
+                            value="B10"
+                        />
+                        <label for="checkbox-B10" class="btn btn-dark">B10</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B11"
+                            value="B11"
+                        />
+                        <label for="checkbox-B11" class="btn btn-dark">B11</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-B12"
+                            value="B12"
+                        />
+                        <label for="checkbox-B12" class="btn btn-dark">B12</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mb-4">
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C01"
+                            value="C01"
+                        />
+                        <label for="checkbox-C01" class="btn btn-dark">C01</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C02"
+                            value="C02"
+                        />
+                        <label for="checkbox-C02" class="btn btn-dark">C02</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C03"
+                            value="C03"
+                            disabled
+                        />
+                        <label for="checkbox-C03" class="btn btn-light">C03</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C04"
+                            value="C04"
+                        />
+                        <label for="checkbox-C04" class="btn btn-dark">C04</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C05"
+                            value="C05"
+                        />
+                        <label for="checkbox-C05" class="btn btn-dark">C05</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C06"
+                            value="C06"
+                        />
+                        <label for="checkbox-C06" class="btn btn-dark">C06</label>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C07"
+                            value="C07"
+                        />
+                        <label for="checkbox-C07" class="btn btn-dark">C07</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C08"
+                            value="C08"
+                        />
+                        <label for="checkbox-C08" class="btn btn-dark">C08</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C09"
+                            value="C09"
+                        />
+                        <label for="checkbox-C09" class="btn btn-dark">C09</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C10"
+                            value="C10"
+                        />
+                        <label for="checkbox-C10" class="btn btn-dark">C10</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C11"
+                            value="C11"
+                        />
+                        <label for="checkbox-C11" class="btn btn-dark">C11</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-C12"
+                            value="C12"
+                        />
+                        <label for="checkbox-C12" class="btn btn-dark">C12</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mb-4">
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D01"
+                            value="D01"
+                        />
+                        <label for="checkbox-D01" class="btn btn-dark">D01</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D02"
+                            value="D02"
+                        />
+                        <label for="checkbox-D02" class="btn btn-dark">D02</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D03"
+                            value="D03"
+                        />
+                        <label for="checkbox-D03" class="btn btn-dark">D03</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D04"
+                            value="D04"
+                        />
+                        <label for="checkbox-D04" class="btn btn-dark">D04</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D05"
+                            value="D05"
+                        />
+                        <label for="checkbox-D05" class="btn btn-dark">D05</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D06"
+                            value="D06"
+                        />
+                        <label for="checkbox-D06" class="btn btn-dark">D06</label>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D07"
+                            value="D07"
+                        />
+                        <label for="checkbox-D07" class="btn btn-dark">D07</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D08"
+                            value="D08"
+                            disabled
+                        />
+                        <label for="checkbox-D08" class="btn btn-light">D08</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D09"
+                            value="D09"
+                            disabled
+                        />
+                        <label for="checkbox-D09" class="btn btn-light">D09</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D10"
+                            value="D10"
+                        />
+                        <label for="checkbox-D10" class="btn btn-dark">D10</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D11"
+                            value="D11"
+                        />
+                        <label for="checkbox-D11" class="btn btn-dark">D11</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-D12"
+                            value="D12"
+                        />
+                        <label for="checkbox-D12" class="btn btn-dark">D12</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mb-4">
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E01"
+                            value="E01"
+                        />
+                        <label for="checkbox-E01" class="btn btn-dark">E01</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E02"
+                            value="E02"
+                        />
+                        <label for="checkbox-E02" class="btn btn-dark">E02</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E03"
+                            value="E03"
+                        />
+                        <label for="checkbox-E03" class="btn btn-dark">E03</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E04"
+                            value="E04"
+                        />
+                        <label for="checkbox-E04" class="btn btn-dark">E04</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E05"
+                            value="E05"
+                        />
+                        <label for="checkbox-E05" class="btn btn-dark">E05</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E06"
+                            value="E06"
+                        />
+                        <label for="checkbox-E06" class="btn btn-dark">E06</label>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E07"
+                            value="E07"
+                        />
+                        <label for="checkbox-E07" class="btn btn-dark">E07</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E08"
+                            value="E08"
+                        />
+                        <label for="checkbox-E08" class="btn btn-dark">E08</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E09"
+                            value="E09"
+                        />
+                        <label for="checkbox-E09" class="btn btn-dark">E09</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E10"
+                            value="E10"
+                        />
+                        <label for="checkbox-E10" class="btn btn-dark">E10</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E11"
+                            value="E11"
+                        />
+                        <label for="checkbox-E11" class="btn btn-dark">E11</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-E12"
+                            value="E12"
+                        />
+                        <label for="checkbox-E12" class="btn btn-dark">E12</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mb-4">
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F01"
+                            value="F01"
+                        />
+                        <label for="checkbox-F01" class="btn btn-dark">F01</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F02"
+                            value="F02"
+                        />
+                        <label for="checkbox-F02" class="btn btn-dark">F02</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F03"
+                            value="F03"
+                        />
+                        <label for="checkbox-F03" class="btn btn-dark">F03</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F04"
+                            value="F04"
+                        />
+                        <label for="checkbox-F04" class="btn btn-dark">F04</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F05"
+                            value="F05"
+                        />
+                        <label for="checkbox-F05" class="btn btn-dark">F05</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F06"
+                            value="F06"
+                        />
+                        <label for="checkbox-F06" class="btn btn-dark">F06</label>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F07"
+                            value="F07"
+                        />
+                        <label for="checkbox-F07" class="btn btn-dark">F07</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F08"
+                            value="F08"
+                        />
+                        <label for="checkbox-F08" class="btn btn-dark">F08</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F09"
+                            value="F09"
+                        />
+                        <label for="checkbox-F09" class="btn btn-dark">F09</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F10"
+                            value="F10"
+                        />
+                        <label for="checkbox-F10" class="btn btn-dark">F10</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F11"
+                            value="F11"
+                        />
+                        <label for="checkbox-F11" class="btn btn-dark">F11</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-F12"
+                            value="F12"
+                        />
+                        <label for="checkbox-F12" class="btn btn-dark">F12</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mb-4">
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G01"
+                            value="G01"
+                        />
+                        <label for="checkbox-G01" class="btn btn-dark">G01</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G02"
+                            value="G02"
+                        />
+                        <label for="checkbox-G02" class="btn btn-dark">G02</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G03"
+                            value="G03"
+                        />
+                        <label for="checkbox-G03" class="btn btn-dark">G03</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G04"
+                            value="G04"
+                        />
+                        <label for="checkbox-G04" class="btn btn-dark">G04</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G05"
+                            value="G05"
+                        />
+                        <label for="checkbox-G05" class="btn btn-dark">G05</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G06"
+                            value="G06"
+                        />
+                        <label for="checkbox-G06" class="btn btn-dark">G06</label>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-around">
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G07"
+                            value="G07"
+                        />
+                        <label for="checkbox-G07" class="btn btn-dark">G07</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G08"
+                            value="G08"
+                        />
+                        <label for="checkbox-G08" class="btn btn-dark">G08</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G09"
+                            value="G09"
+                        />
+                        <label for="checkbox-G09" class="btn btn-dark">G09</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G10"
+                            value="G10"
+                        />
+                        <label for="checkbox-G10" class="btn btn-dark">G10</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G11"
+                            value="G11"
+                        />
+                        <label for="checkbox-G11" class="btn btn-dark">G11</label>
+                    </div>
+                    <div class="seat">
+                        <input
+                            type="checkbox"
+                            name="seats[]"
+                            id="checkbox-G12"
+                            value="G12"
+                        />
+                        <label for="checkbox-G12" class="btn btn-dark">G12</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center my-5">
+                <button type="submit" class="btn btn-warning" value="button">
+                    Selesai memilih
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-bottom">
+    <div class="container d-flex justify-content-center">
+        <span class="text-white">Layar Bioskop Disini</span>
+    </div>
+</nav>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
